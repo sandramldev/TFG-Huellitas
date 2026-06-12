@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="3jyvc55u2i7MVGZD76zT">
+    <mxGraphModel dx="672" dy="1590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ejUiI36eayz8jIJUf2t5-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ejUiI36eayz8jIJUf2t5-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="540" y="-960" as="sourcePoint" />
+            <mxPoint x="540" y="-910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="USUARIO" vertex="1">
+          <mxGeometry height="30" width="60" x="510" y="-990" as="geometry" />
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-5" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="SERVLETS&lt;div&gt;(Controlador)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="490" y="-846" as="geometry" />
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-6" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="VPS&lt;div&gt;(Vista)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="490" y="-919" as="geometry" />
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-9" edge="1" parent="1" source="ejUiI36eayz8jIJUf2t5-6" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ejUiI36eayz8jIJUf2t5-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="539.5" y="-850" as="sourcePoint" />
+            <mxPoint x="540" y="-830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-11" edge="1" parent="1" source="ejUiI36eayz8jIJUf2t5-5" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ejUiI36eayz8jIJUf2t5-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="539.5" y="-793" as="sourcePoint" />
+            <mxPoint x="539.5" y="-760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-12" edge="1" parent="1" source="ejUiI36eayz8jIJUf2t5-15" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.515;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="ejUiI36eayz8jIJUf2t5-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="539.5" y="-730" as="sourcePoint" />
+            <mxPoint x="539.5" y="-697" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-13" edge="1" parent="1" source="ejUiI36eayz8jIJUf2t5-14" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ejUiI36eayz8jIJUf2t5-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="537.5" y="-620" as="sourcePoint" />
+            <mxPoint x="538" y="-620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-14" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="DAO&lt;div&gt;(Acceso Datos)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="488" y="-690" as="geometry" />
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-15" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="SERVICIOS&lt;div&gt;(Negocio)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="490" y="-775" as="geometry" />
+        </mxCell>
+        <mxCell id="ejUiI36eayz8jIJUf2t5-16" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="ORACLE&lt;div&gt;(Database)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="488" y="-604.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
