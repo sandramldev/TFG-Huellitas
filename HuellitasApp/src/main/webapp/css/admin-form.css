@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+h1 {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.admin-form-wrapper {
+	max-width: 480px;
+	margin: 40px auto;
+	padding: 30px 35px;
+	color: var(--texto);
+	background-color: var(--blanco);
+	border: 1px solid rgba(78, 139, 112, .25);
+	border-radius: 14px;
+	box-shadow: var(--sombra-card);
+}
+
+.admin-form p {
+	margin: 12px 0;
+}
+
+.admin-form label {
+	display: block;
+	margin-top: 22px;
+	font-weight: 600;
+}
+
+.admin-form select, .admin-form input {
+	width: 100%;
+	padding: 10px 12px;
+	margin-top: 8px;
+	border: 1px solid var(--verde-medio);
+	border-radius: 10px;
+	outline: none;
+	background-color: var(--blanco);
+}
+
+.admin-form .btn-form {
+	margin-top: 10px;
+	padding: 10px 22px;
+	font-size: 15px;
+	border-radius: 22px;
+	width: auto;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background-color: var(--verde-oscuro);
+	color: var(--blanco);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/*BOTÓN PRINCIPAL*/
+.admin-actions .btn {
+	padding: 8px 18px;
+	font-size: 14px;
+}
+
+.admin-form .btn-form:hover {
+	background-color: var(--arena);
+}
+
+.admin-form .btn-form:active {
+	background-color: var(--verde-claro);
+}
+
+.admin-form .btn-form:focus-visible {
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+.admin-form .btn-form .icon-btn {
+	font-size: 20px;
+	color: inherit;
+}
+
+/*Div volver al inicio/listado*/
+.admin-actions {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin: 10px 0;
+}
+
+.admin-actions a {
+	text-decoration: none;
+	color: var(--texto);
+}
+
+/*Diseño calendario*/
+.fecha-disponibilidad {
+	display: flex;
+	align-items: end;
+	gap: 10px;
+}
+
+.btn-icon-calendar {
+	width: 48px;
+	height: 48px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--verde-oscuro);
+	color: var(--blanco);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-icon-calendar:hover {
+	background-color: var(--verde-claro);
+	transform: scale(1.03);
+}
+
+.btn-icon-calendar .material-icons {
+	font-size: 22px;
+}
+
+/*Diseño horas formulario crear cita*/
+
+/*TÍTULO HORAS*/
+.titulo-horas {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin: 30px 0 20px;
+	color: var(--verde-oscuro);
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+
+/*SEPARACIÓN DEL BLOQUE DE HORAS*/
+.titulo-horas {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	margin: 25px 0;
+}
+
+.linea {
+	flex: 1;
+	height: 1px;
+	background: var(--verde-oscuro);
+	max-width: 120px;
+	
+}
+
+.texto-titulo {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--verde-oscuro);
+	font-size: 1rem;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+/*CONTENEDOR HORAS*/
+.horas-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 15px;
+	margin: 30px 0;
+}
+
+.hora-radio {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.hora-radio input[type="radio"] {
+	display: none;
+}
+
+.hora-radio span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 75px; /* antes 100px */
+	height: 42px; /* antes 55px */
+	padding: 0 12px;
+	border-radius: 10px;
+	background: var(--blanco);
+	border: 1px solid #dfe7e3;
+	color: var(--gris-texto);
+	font-size: 0.95rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.hora-radio span:hover {
+	border-color: var(--verde-claro);
+	transform: translateY(-2px);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/*HORA SELECCIONADA*/
+.hora-radio input[type="radio"]:checked+span {
+	background: #eef7f1;
+	border: 2px solid var(--verde-claro);
+	color: var(--verde-oscuro);
+	font-weight: 600;
+}
+
+
+/*NAVEGACION FORMULARIO*/
+.admin-navigation {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 25px;
+}
+
+@media ( max-width : 768px) {
+	.horas-container {
+		justify-content: center;
+	}
+}

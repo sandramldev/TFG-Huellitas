@@ -1,0 +1,20 @@
+
+/*ICONS TABLAS*/
+.material-icons {
+    font-size: 28px;
+   
+} 
+
+/*ICONS HERO*/
+.services-grid .material-icons{
+	font-size:48px;
+	color:var(--verde-oscuro);
+	margin-bottom:12px;
+}
+
+.contacto .material-icons{
+	font-size:22px;
+	vertical-align:middle;
+	margin-right:8px;
+	color:var(--verde-oscuro);
+}

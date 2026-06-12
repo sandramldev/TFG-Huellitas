@@ -1,0 +1,69 @@
+/*Mensaje Servlet*/
+.mensaje-error {
+	color: red;
+}
+
+.mensaje-flotante {
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: fit-content;
+	padding: 10px 18px;
+	border-radius: 12px;
+	z-index: 9999;
+	font-weight: 600;
+	font-size: 14px;
+	max-width: 90vw;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+	backdrop-filter: blur(6px);
+	animation: fadeIn .3s ease, fadeOut .3s ease 4s forwards;
+}
+
+.mensaje-flotante.error {
+	background-color: #fff1f1;
+	color: #a64545;
+	border-left: 5px solid var(--estado-fallecida);
+}
+
+.mensaje-flotante.ok {
+	background-color: #f4faf7;
+	color: var(--verde-oscuro);
+	border-left: 5px solid var(--estado-activa);
+}
+
+/*ERROR CONTRASEÑA*/
+.error-campo{
+    color:#d60000;
+    font-size:13px;
+    margin:-8px 0 12px 8px;
+    text-align:left;
+}
+
+@keyframes fadeIn {from { opacity:0;
+	transform: translateY(-10px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+}
+@keyframes fadeOut {to { opacity:0;
+	transform: translateY(-10px);
+}
+
+}
+
+/*Mensaje info para listar mascotas, citas ...*/
+.mensaje-info {
+	text-align: center;
+	padding: 20px;
+	color: var(--texto);
+	font-style: italic;
+	background-color: rgba(78, 139, 112, .05);
+	border-radius: 10px;
+	margin: 20px auto;
+	max-width: 500px;
+}

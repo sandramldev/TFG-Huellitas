@@ -1,0 +1,202 @@
+/* ================= HERO ================= */
+.hero {
+	position: relative;
+	min-height: 70vh;
+	background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
+		url("../img/Portada.jpg");
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--blanco);
+	padding: 20px;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin-bottom: 15px;
+}
+
+.hero p {
+	font-size: 18px;
+	margin-bottom: 30px;
+	max-width: 600px;
+}
+
+/*BOTON HERO SECUNDARIO*/
+.hero .btn-secondary {
+	background-color: var(--arena);
+	color: var(--verde-oscuro);
+	padding: 14px 28px;
+	border-radius: 30px;
+	font-weight: 600;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+}
+
+.hero .btn-secondary:hover {
+	background-color: var(--arena);
+	color: var(--verde-oscuro);
+	opacity: .9;
+	transform: translateY(-2px);
+}
+
+/* SERVICIOS */
+.services {
+	padding: 40px 20px 40px;
+	text-align: center;
+}
+
+.services h2 {
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 25px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*TARJETAS*/
+.services article {
+	background-color: var(--blanco);
+	padding: 35px 25px;
+	border-radius: 16px;
+	box-shadow: var(--sombra-card);
+	border: 1px solid rgba(78, 139, 112, .15);
+}
+
+.services article h3 {
+	font-size: 1.2rem;
+	margin: 12px 0;
+}
+
+.service-card {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+
+.service-card article {
+	height: 100%;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+}
+
+.service-card article:hover {
+	transform: translateY(-4px);
+}
+
+/*ABOUT*/
+.about {
+	padding: 50px 20px 30px;
+	text-align: center;
+	background-color: var(--gris-fondo);
+}
+
+.about h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.about p {
+	max-width: 700px;
+	margin: 20px auto;
+	line-height: 1.8;
+}
+
+/*CONTACT*/
+.contacto {
+	padding: 30px 20px 50px;
+	text-align: center;
+}
+
+.contacto p {
+	margin: 15px 0;
+}
+
+.contacto a {
+	color: var(--texto);
+	text-decoration: none;
+}
+
+.contacto a:hover {
+	color: var(--verde-oscuro);
+}
+
+.contacto .material-icons {
+	color: var(--verde-oscuro);
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+/* MAPA UBICACIÓN */
+.mapa-preview {
+	
+	margin-top: 20px;
+	overflow: hidden;
+	border-radius: 12px;
+}
+
+.mapa-preview img {
+	width: 100%;
+	max-width: 400px;
+	border-radius: 12px;
+	box-shadow: var(--sombra-card);
+	cursor: pointer;
+	transition: transform 0.2s ease;
+}
+
+.mapa-preview img:hover {
+	transform: scale(1.01);
+}
+
+/*MÓVIL*/
+@media ( max-width :768px) {
+	.hero {
+		min-height: 55vh;
+		background-position: center top;
+	}
+	.hero h1 {
+		font-size: 22px;
+		line-height: 1.2;
+	}
+	.hero p {
+		font-size: 14px;
+		max-width: 85%;
+	}
+}
+
+/*TABLET/PORTATIL*/
+@media ( min-width :769px) and (max-width:1200px) {
+	.hero {
+		min-height: 60vh;
+		background-position: center 62%;
+	}
+	.hero h1 {
+		font-size: 38px;
+	}
+	.hero p {
+		font-size: 17px;
+	}
+}
+
+/*DESKTOP GRANDE*/
+@media ( min-width :1201px) {
+	.hero {
+		background-image: url("../img/PortadaDesktop.png");
+		min-height: 75vh;
+		background-position: center 68%;
+	}
+	.hero h1 {
+		font-size: 52px;
+	}
+	.hero p {
+		font-size: 20px;
+	}
+}

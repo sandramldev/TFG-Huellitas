@@ -1,0 +1,60 @@
+/* RESET BÁSICO */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+html, body {
+	
+	overflow-x: hidden;
+}
+
+body {
+	color: var(--texto);
+	background-color: var(--gris-fondo);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+:root {
+	/* IDENTIDAD HUELLITAS */
+	--verde-oscuro: #4E8B70;
+	--verde-medio: #73A88C;
+	--verde-claro: #DCEFE5;
+
+	/* COLOR DE APOYO */
+	--arena: #CFA77B;
+	
+	
+	/* ESTADOS */
+	--estado-activa: #7CFC98;
+	--estado-fallecida: #b85c5c;
+
+	--estado-pendiente: #CFA77B;
+	--estado-realizada: #5F9E78;
+	--estado-cancelada: #D46A6A;
+
+	/* NEUTROS */
+	--blanco: #FFFFFF;
+	--gris-fondo: #F8FAF9;
+
+	/* TEXTOS */
+	--texto: #4A4A4A;
+	--texto-claro: #F7FBF8;
+
+	/* SOMBRAS */
+	--sombra-suave: 0 8px 24px rgba(0, 0, 0, .12);
+	--sombra-card: 0 10px 30px rgba(0, 0, 0, .16);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.app-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	
+}

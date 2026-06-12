@@ -1,0 +1,183 @@
+
+@charset "UTF-8";
+/* ============================= */
+/* ESTILOS DE TABLAS */
+/* Usuarios, mascotas, citas 
+Las tablas comparten una hoja de estilos común basada en clases específicas,
+ evitando reglas globales y facilitando la reutilización del diseño en diferentes entidades.*/
+/* ============================= */
+
+/*CABECERA  VISUAL*/
+.page-header{
+	text-align:center;
+	margin-bottom:30px;
+}
+
+.page-header .material-icons{
+	font-size:36px;
+	display:block;
+	margin-bottom:8px;
+	color:var(--verde-oscuro);
+}
+h1 {
+	text-align: center;
+	margin: 30px 0 25px;
+	color: var(--texto);
+}
+/*CONTENEDOR*/
+.admin-table-wrapper {
+	max-width: 900px;
+	margin: 40px auto;
+	padding: 0 20px;
+}
+
+/* TABLA */
+.admin-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: var(--blanco);
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+}
+
+.admin-table .material-icons {
+	color: var(--texto);
+}
+
+.admin-table-wide {
+	min-width: 650px;
+}
+
+/*TABLA RESPONSIVE*/
+.table-responsive {
+	width: 100%;
+	overflow-x: auto;
+}
+
+/* CABECERA TABLAS */
+.admin-table thead {
+	background-color: var(--verde-oscuro);
+}
+
+.admin-table th {
+	padding: 14px;
+	text-align: left;
+	color: var(--blanco);
+	font-weight: 600;
+}
+
+
+/* CUERPO */
+.admin-table td {
+	padding: 12px 14px;
+	color: var(--texto);
+	border-bottom: 1px solid rgba(78,139,112,.15);
+}
+
+.admin-table tbody tr:nth-child(even) {
+	 background-color: rgba(78,139,112,.08);
+}
+
+
+/* HOVER */
+.admin-table tbody tr:hover {
+	background-color: rgba(78,139,112,.12);
+	cursor: pointer;
+}
+
+/* ACCIONES */
+.acciones {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+.admin-table .acciones {
+	text-align: center;
+	white-space: nowrap;
+	width: 90px;
+}
+
+.admin-table .acciones a {
+	display: inline-flex;
+	align-items: center;
+	margin: 0 8px;
+	text-decoration: none;
+}
+
+/*ESTADO MASCOTA*/
+.estado-activa {
+	color: var(--verde-oscuro);
+	font-weight: 600;
+}
+
+.estado-activa::before {
+    content: "● ";
+    color: var(--verde-oscuro);
+} 
+
+
+.estado-fallecida {
+	color: var(--estado-fallecida);
+	font-weight: 600;
+}
+
+.estado-fallecida::before {
+    content: "● ";
+    color: #b85c5c;
+}
+	
+	/* OTROS ESTADOS */
+.estado-pendiente {
+	color: var(--estado-pendiente);
+	font-weight: 600;
+}
+
+.estado-realizada {
+	color: var(--estado-realizada);
+	font-weight: 600;
+}
+
+.estado-cancelada {
+	color: var(--estado-cancelada);
+	font-weight: 600;
+}
+
+/* Botón icono dentro de tabla (delete) */
+.btn-icon {
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+}
+
+.btn-icon:focus {
+	outline: none;
+}
+
+.btn-icon:hover .material-icons {
+	color: var(--verde-claro);
+}
+
+/* RESPONSIVE */
+@media ( max-width : 768px) {
+	.admin-table th, .admin-table td {
+		font-size: 14px;
+		padding: 10px;
+	}
+}
+
+/*Estilo th lista citas*/
+.th-mascota {
+	text-align: center;
+}
+
+.subtitulo-th {
+	font-size: 12px;
+	font-weight: 400;
+	opacity: 0.8;
+}
