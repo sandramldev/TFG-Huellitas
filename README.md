@@ -121,6 +121,8 @@ La aplicación ha sido desplegada en un entorno real utilizando:
 
 La documentación completa del Trabajo de Fin de Ciclo se encuentra disponible en el repositorio junto con los diagramas y recursos utilizados durante el desarrollo.
 
+[📄 Descargar memoria del TFG](docs/Memoria_TFG_Huellitas.pdf)
+
 ---
 
 ## Autor
